@@ -9,7 +9,7 @@ label {
 mat-radio-group {
   display: flex;
   justify-content: center;
-  flex-direction: row;
+  flex-flow: row wrap;
 }
 
 mat-radio-button {

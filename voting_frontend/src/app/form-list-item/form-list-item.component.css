@@ -35,14 +35,16 @@ table td {
 
 .tool-container {
   display: flex;
+  flex-flow: row wrap;
   justify-content: space-evenly;
   align-content: flex-start;
 }
 
-.tool-container table {
+.tool-container > table {
+  margin-bottom: 20px;
 }
 
 .tool-container > button {
-  align-self: flex-start;
+  align-self: center;
   font-weight: bold;
 }
