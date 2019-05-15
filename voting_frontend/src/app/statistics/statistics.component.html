@@ -1,8 +1,10 @@
 <header>
   <h1>Survey statistics | <a *ngIf="!disableMainPageLink" [routerLink]="['/', this.formHash]">Survey page</a></h1>
 </header>
-<h3>{{ formTitle }}</h3>
-<div *ngIf="answerStats.length">
-  <app-plot *ngFor="let singleAnswerData of answerStats" [plotData]="singleAnswerData"
-            [containerId]="singleAnswerData.id"></app-plot>
+<div class="container">
+  <h2>{{ formTitle }}</h2>
+  <div *ngIf="answerStats.length">
+    <app-plot *ngFor="let singleAnswerData of answerStats" [plotData]="singleAnswerData"
+              [containerId]="singleAnswerData.id"></app-plot>
+  </div>
 </div>

@@ -1,3 +1,8 @@
+form {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
 mat-form-field {
   width: 275px;
 }
